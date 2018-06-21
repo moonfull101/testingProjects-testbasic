@@ -20,12 +20,22 @@ public class Book extends Author {
 		this.price = price; 
 		this.quantity = quantity; 
 	}
+	
+	public String getAuthorName () {
+		return author.getName(); 
+	}
+	
+	public String getAuthorEmail ( ) {
+		return author.getEmail(); 
+	}
+	public char getAuthorGender () {
+		return author.getGender(); 
+	}
 	public String getNameOfABook (String nameOfABook) {
 		return nameOfABook; 
 	}
 		public Author getAuthor(Author author) {
 			return author; 
-		
 		}
 		public double getPrice (double price) {
 			return price; 
@@ -40,7 +50,7 @@ public class Book extends Author {
 			this.quantity = newQuantity;
 		}
 		public String toString () {
-			return "Book[name = " + nameOfABook + " Author[name= " + nameOfABook + " email = " + email + " gender + " + gender +"], price = "+ price + " quantity = "+ quantity; 
+return "Book[name = " + nameOfABook + " Author[name= " + nameOfABook + " email = " + email + " gender + " + gender +"], price = "+ price + " quantity = "+ quantity; 
 		}
 
 		public String getAuthor(String name) {
@@ -56,6 +66,7 @@ public class Book extends Author {
 				return nameAuthornow; 
 			}
 		}
+
 
 
 
