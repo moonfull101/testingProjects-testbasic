@@ -19,9 +19,9 @@ public class HarryPotter {
 		HarryPotter1.setPrice(60.50);
 		HarryPotter1.setQty(20);
 		HarryPotter1.getAuthorName("JKROWLING");
-		System.out.println("The name is: " + HarryPotter1.getNameOfABook("HarryPotter and the philo's stone")); 
-		System.out.println("the price is: " + HarryPotter1.getPrice(60.50));
-		System.out.println("the quantity is: "+ HarryPotter1.getPrice(20));
+		System.out.println("The name is: " + HarryPotter1.getNameOfABook("harry potter 1")); 
+		System.out.println("the price is: " + HarryPotter1.getPrice(60));
+		System.out.println("the quantity is: "+ HarryPotter1.getQty(9));
 		System.out.println(HarryPotter1.getAuthor(jkRowling));
 		System.out.println("the author is: " + HarryPotter1.getAuthor(jkRowling));
 		System.out.println("the author's email is: " + HarryPotter1.getAuthor(jkRowling.getEmail()));
