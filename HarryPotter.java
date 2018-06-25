@@ -25,6 +25,12 @@ public class HarryPotter {
 		System.out.println(HarryPotter1.getAuthor(jkRowling));
 		System.out.println("the author is: " + HarryPotter1.getAuthor(jkRowling));
 		System.out.println("the author's email is: " + HarryPotter1.getAuthor(jkRowling.getEmail()));
+		
+			Author [] authors = new Author [2];
+		authors[0] = new Author ("j.k.rowling", "j.k.rowlingoriginal@test.com", 'm'); 
+		authors[1] = new Author ("Carry-j.k.rowling daughter ", "daughterof@test.com", 'f'); 
+
+
 	}
 
 }
