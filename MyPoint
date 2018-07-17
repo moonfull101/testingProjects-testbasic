@@ -1,0 +1,90 @@
+package circle;
+
+
+
+public class Mypoint {
+
+	
+
+	public int x;
+
+	public int y;
+
+	
+
+	int[][] getxy = new int[1][1];
+
+	
+
+	public void NoArg (int x, int y) {
+
+	this.x = 0; 
+
+	this.y = 0;
+
+	}
+
+	
+	//overloaded
+
+	public Mypoint (int x, int y) {
+
+		this.x = x;
+
+		this.y = y; 
+
+
+	}
+
+	
+	public int GetX () {
+
+		return x; 
+
+	}
+
+	public int GetY () {
+
+		return y; 
+
+	}
+
+	public void SetX (int x) {
+
+		this.x = x; 
+
+	}
+
+	
+	public void SetY (int y) {
+
+		this.y = y; 
+
+	}
+
+	
+	public void SetXY (int x, int y) {
+
+		this.x = x; 
+
+		this.y = y; 
+
+	}
+
+	public int[][] GetXY () {
+
+		return getxy; 
+			
+
+	}
+
+	public String toString() {
+
+		return "(" + x + "," + y + ")";
+
+	}
+
+	
+
+}
+
