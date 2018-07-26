@@ -1,0 +1,122 @@
+
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
+
+import com.shakedexample.myapplication.R;
+
+public class LifeActivityCycle extends Activity {
+
+    String status = "";
+    int order = 0;
+
+    public void displayStatus() {
+        order++;
+        String message = String.valueOf(order) + " : " + status;
+        //t.setText(status)
+        Toast.makeText(getApplicationContext(), message , Toast.LENGTH_SHORT).show();
+    }
+
+
+    @Override
+    protected void onCreate(Bundle SavedInstanceState) {
+        super.onCreate(SavedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        status = "Activity Created";
+        displayStatus();
+
+
+    }
+
+    @Override
+    protected void onStart() {
+        //activity resumed
+        super.onStart();
+        status = "activity started";
+        displayStatus();
+    }
+
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedinstanceState) {
+        //restoring instance state 
+        super.onRestoreInstanceState(savedinstanceState);
+        status = "restoring instance";
+        displayStatus();
+    }
+
+    @Override
+    protected void onResume() {
+        //restoring instance state
+        super.onResume();
+        status = "activity Resumed";
+        displayStatus();
+    }
+
+    @Override
+    protected void onPause() {
+        //activity paused
+        super.onPause();
+        status = "Activity Paused";
+        displayStatus();
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        //saving instance state
+        super.onSaveInstanceState(outState);
+        status = "Saving Instances";
+        displayStatus();
+
+    }
+
+        @Override
+        protected void onStop() {
+            //activity stopped
+            super.onStop();
+            status = "Activity Stopped";
+            displayStatus();
+        }
+
+        @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        status = "Activity Destroyed";
+        displayStatus();
+        }
+
+        @Override
+    protected void onRestart() {
+        //activity destroyed
+            super.onRestart();
+            status = "Activity Restarted";
+            displayStatus();
+        }
+
+        @Override
+    public boolean onCreateOptionsMenu (Menu menu) {
+        //inflate the menu; this adds items to the action bar if it is present
+            getMenuInflater();
+            return true;
+        }
+
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        //handle action bar item clickers here. this action bar will
+            // automatically handle clickers on the hope/up button , so long
+            // as you specify a parent activity in AndroidManifest.xml
+
+            switch (item.getItemId()) {
+                case R.id.action_settings:
+                return true;
+            }
+            return super.onOptionsItemSelected(item);
+
+
+
+            }
+        }
