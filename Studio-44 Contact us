@@ -1,0 +1,18 @@
+<html>
+<head>
+</head>
+<body>
+<h2>
+Contact us
+</h2>
+<forum>
+First name <br>
+<input type="text"  name = "First Name"><br>
+Last name <br>
+<input type = "text" name = "Last name"></br>
+Email <br>
+<input type = "Email" name = "Email"><br>
+<input type = "submit" value = "submit">
+</forum>
+</body>
+</html>
