@@ -1,0 +1,48 @@
+h1 {
+float: center; 
+margain-left: 40px;
+color:#6f1620;
+background-color:#fbf8ea;
+font-family:"Century Gothic"; 
+}
+
+body {
+    background-color:#fbf8ea;
+}
+
+#share {
+    float: right; 
+    height: 60px; 
+    color: #6f1620; 
+    font-size: 14px;
+    font-family:"Century Gothic";
+}
+
+h5 {
+    color: #6f1620; 
+    float: right; 
+    margain-right;  
+    border-color: white; 
+    background-color:#6f1620; 
+}
+
+h3 {
+    display: block; 
+    color:#6f1620; 
+    float: center; 
+    border-type: solid;
+    border-width: medium; 
+    border-color: white;
+    float:left; 
+    
+
+}
+
+li a:hover:not (.active) {
+    background-color: #6f1620;
+}
+
+.active {
+    background-color:#c42739;
+}
+
