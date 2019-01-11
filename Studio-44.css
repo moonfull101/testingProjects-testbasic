@@ -16,6 +16,8 @@ body {
     color: #6f1620; 
     font-size: 14px;
     font-family:"Century Gothic";
+    padding: 17px,17px,17px; 
+    margin:17px, 17px;
 }
 
 h5 {
